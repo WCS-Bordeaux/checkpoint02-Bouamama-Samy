@@ -11,4 +11,6 @@ function EditUser($stateParams) {
     // Controller
     let id = $stateParams.id;
     console.log(id);
+
+    $resource("/users/", id
 }
