@@ -1,0 +1,24 @@
+.user-note {
+   margin: 5px 0px 20px 0px;
+}
+
+.user-info {
+   border: 1px solid black;
+   border-left: none;
+   border-top: none;
+   position: relative;
+}
+
+.user-edit {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.material-icons {
+   padding-right: 5px;
+}
+
+li {
+   margin-left: 25px;
+}

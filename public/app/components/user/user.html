@@ -1,0 +1,18 @@
+<div class="container-fluid">
+   <div class="row">
+
+      <div class="user-info col s4">
+         <div class="user-edit"><a ui-sref="edituser({id: $ctrl.user._id})"><i class="material-icons">create</i></a></div>
+         <div><i class="material-icons">person</i>{{$ctrl.user.name.first}} {{$ctrl.user.name.last}}</div>
+         <div><i class="material-icons">work</i>{{$ctrl.user.company}}</div>
+         <div><i class="material-icons">email</i>{{$ctrl.user.email}}</div>
+         <div><i class="material-icons">phone</i>{{$ctrl.user.phone}}</div>
+      </div>
+
+      <div class="user-notes col s8">
+         <div class="user-note" ng-repeat='note in $ctrl.user.notes track by $index'>{{note}}</li>
+      </div>
+
+   </div>
+   <hr>
+</div>

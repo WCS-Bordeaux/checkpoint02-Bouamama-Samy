@@ -1,0 +1,8 @@
+<h2 class="title"> Quizz </h2>
+<div id="quizz-container">
+
+   <div ng-repeat='item in $ctrl.quizz track by $index'>
+      <h5>{{item.question}}</h5>
+      <p class="quizz-response">{{item.response}}</p>
+   </div>
+</div>

@@ -1,0 +1,30 @@
+<form novalidate>
+    <div class="row">
+        <div class="input-field col s12 m6">
+            <input id="first_name" type="text" class="validate" ng-model="$ctrl.user.name.first">
+            <label for="first_name" class="active">First Name</label>
+        </div>
+        <div class="input-field col s12 m6">
+            <input id="last_name" type="text" class="validate" ng-model="$ctrl.user.name.last">
+            <label for="last_name" class="active">Last Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12 m6">
+            <input id="age" type="number" class="validate" ng-model="$ctrl.user.company">
+            <label for="age" class="active">company</label>
+        </div>
+        <div class="input-field col s12 m6">
+            <input id="clan" type="text" class="validate" ng-model="$ctrl.user.email">
+            <label for="clan" class="active">email</label>
+        </div>
+        <div class="input-field col s12 m6">
+            <input id="phone" type="text" class="validate" ng-model="$ctrl.user.phone">
+            <label for="phone" class="active">phone</label>
+        </div>
+    </div>
+
+    <div class="btn red waves-effect" ng-if="$ctrl.onRemove" ng-click="$ctrl.onRemove()">Delete</div>
+    <div class="btn blue waves-effect" ng-if="$ctrl.mode === 'edit'" ng-click="$ctrl.onSave()">Save</div>
+    <div class="btn blue waves-effect" ng-if="$ctrl.mode === 'add'" ng-click="$ctrl.onSave()">Add</div>
+</form>

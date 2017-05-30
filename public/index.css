@@ -1,0 +1,27 @@
+
+.bold {
+    font-weight: bold !important;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.brand-logo {
+  margin-left: 25px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+#quizz-container {
+   padding-left: 50px;
+}
+
+.quizz-response {
+   padding-left: 15px;
+}
